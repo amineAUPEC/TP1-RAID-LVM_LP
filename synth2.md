@@ -113,13 +113,13 @@
 
 
 - augmentez la capacité du LV* : de 4 Go supplémentaires.
-
 `sudo lvextend -L+4G  /dev/vgstockage/lvstockage`
 
 
 - Comparez la taille du LV* à celle de la partition*    
 
-`df -h`  
+`sudo cat /proc/partitions`  
+`sudo df -h`  
 
 `sudo lvs`  
 
