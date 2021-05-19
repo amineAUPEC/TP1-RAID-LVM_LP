@@ -122,4 +122,14 @@ sudo df -h | grep /mnt/TP1
 
 `sudo lvs`
 `sudo vgdisplay vgstockage`
-`sudo vgdisplay`
+<!-- `sudo vgdisplay` -->
+
+
+*Pour utiliser la totalité de l’espace du LV* :
+- étendre son système de fichiers*.
+
+> [!NOTE]
+> Après cette opération, vérifiez que la totalité de l’espace de stockage est bien utilisée par le système de fichier. 
+- Affichez les propriétés du VG* : 
+> *pour vérifier qu'il lui reste encore de l'espace non alloué.*
+`sudo vgdisplay vgstockage`
