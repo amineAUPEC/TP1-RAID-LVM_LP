@@ -20,8 +20,6 @@ datacenter historique d'amazon à Orgeon *le premier qui a été créé*
 eu-west-3 Paris
 
 
-
-
 Instance = VM en gros
 
 
