@@ -59,9 +59,9 @@ AMI :
 
 - Tenant (locataire)
     - Schemas : 
-        - ![alternative](./images/Capture_decran 2021-05-19 121310.png)
-        - :::image type="complex" source="images/Capture_decran 2021-05-19 121310.png" alt-text="schema1_TP":::
-        :::image-end:::
+        - ![schema_TP1](./images/Capture_decran_2021-05-19_121310.png)
+        <!-- - :::image type="complex" source="images/Capture_decran 2021-05-19121310.png" alt-text="schema1_TP":::
+        :::image-end::: -->
 
 - VPC Virtual Private Cloud : Peuvent êtres étanches entre eux : via l'IPSec
     - CHANEL ne veut pas que ces VM soit partagés à DIOR car il y a de la confidentialité
@@ -69,8 +69,8 @@ AMI :
         
     - TP avec que des VPC étanches pas d'inter-connexion entre les autres
 
-- 
-
+- isolation : maquette :
+    ![schema2](./images/Capture_decran_2021-05-19_122403.png)
 - 
 
 - 
