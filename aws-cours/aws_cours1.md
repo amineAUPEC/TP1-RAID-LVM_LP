@@ -71,9 +71,10 @@ AMI :
 
 - isolation : maquette :
     ![schema2](./images/Capture_decran_2021-05-19_122403.png)
-- 
+    
+    - routeurs va effectuer du NAT statique : atrribuer une @IP statique privée avec une autre IP publique
 
-- 
+- TP avec Proxmox et TD en vu
 
 - 
 
