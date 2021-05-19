@@ -76,9 +76,9 @@ AMI :
 
 - TP avec Proxmox et TD en vu
 
-- 
+<!-- -  -->
 
 
 
 > [!NOTE]
-> Copyright Brice-Augustin
+> Copyright Brice-Augustin, Amine AA
