@@ -45,9 +45,9 @@
 > il va lever l'exception avec un msg derreur, ou message système "Freenas: permission non accordée"   
 
 ####                # réduit à 1GB
->>    sudo lvreduce -L 1G  /dev/vgstockage/lvstockage <<< "y"
+>>    `sudo lvreduce -L 1G  /dev/vgstockage/lvstockage <<< "y"`
 #### réduit de 1GB
->>    sudo lvreduce -L -1G  /dev/vgstockage/lvstockage <<< "y"
+>>   `sudo lvreduce -L -1G  /dev/vgstockage/lvstockage <<< "y"`
 
 
 ## eleves :
@@ -78,7 +78,7 @@
    ` sudo lvs`
 ###### formater en ext4  
 <!-- sudo mkfs.ext4 /dev/vgstockage/ -->
->    `sudo mkfs.ext4 /dev/vgstockage/lvstockage`
+>>    `sudo mkfs.ext4 /dev/vgstockage/lvstockage`
 
 
 ###### montage persitant avec fstab
