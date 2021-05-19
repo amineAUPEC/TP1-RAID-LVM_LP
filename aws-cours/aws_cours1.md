@@ -59,6 +59,7 @@ AMI :
 
 - Tenant (locataire)
     - Schemas : 
+        - ![alternative](./images/Capture_decran 2021-05-19 121310.png)
         - :::image type="complex" source="images/Capture_decran 2021-05-19 121310.png" alt-text="schema1_TP":::
         :::image-end:::
 
