@@ -82,19 +82,19 @@
 `sudo mkfs.ext4 /dev/vgstockage/lvstockage`
 
 ###### montage persitant avec fstab
-`sudo mkdir -p /mnt/TP1`
-`sudo nano /etc/fstab`
-`echo "/dev/vgstockage/lvstockage     /mnt/TP1     ext4     errors=remount-ro     0     1    " >> /etc/fstab`
+`sudo mkdir -p /mnt/TP1`  
+`sudo nano /etc/fstab`  
+`echo "/dev/vgstockage/lvstockage     /mnt/TP1     ext4     errors=remount-ro     0     1    " >> /etc/fstab`  
 
 
 
 <!-- sudo fdisk -l -->
 
-- reboot for fstab
-`sudo reboot`
+- reboot for fstab  
+`sudo reboot`  
 
-- vérif
-sudo df -h | grep /mnt/TP1
+- vérif  
+`sudo df -h | grep /mnt/TP1  `
 
 
 
@@ -117,19 +117,21 @@ sudo df -h | grep /mnt/TP1
 `sudo lvextend -L+4G  /dev/vgstockage/lvstockage  `
 
 
-- Comparez la taille du LV* à celle de la partition*
-`df -h`
+- Comparez la taille du LV* à celle de la partition*    
 
-`sudo lvs`
-`sudo vgdisplay vgstockage`
+`df -h`  
+
+`sudo lvs`  
+
+`sudo vgdisplay vgstockage`  
 <!-- `sudo vgdisplay` -->
 
 
-*Pour utiliser la totalité de l’espace du LV* :
-- étendre son système de fichiers*.
+###### *Pour utiliser la totalité de l’espace du LV* :  
+- étendre son système de fichiers*.  
 
 > [!NOTE]
-> Après cette opération, vérifiez que la totalité de l’espace de stockage est bien utilisée par le système de fichier. 
-- Affichez les propriétés du VG* : 
-> *pour vérifier qu'il lui reste encore de l'espace non alloué.*
+> Après cette opération, vérifiez que la totalité de l’espace de stockage est bien utilisée par le système de fichier.   
+- Affichez les propriétés du VG* :   
+> *pour vérifier qu'il lui reste encore de l'espace non alloué.*  
 `sudo vgdisplay vgstockage`
