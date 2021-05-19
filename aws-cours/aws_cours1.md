@@ -1,4 +1,4 @@
-prérequis TP U32 ADMINS SYST SSH
+prérequis TP U31 ADMINS SYST SSH
 
 TP UE36 
 
