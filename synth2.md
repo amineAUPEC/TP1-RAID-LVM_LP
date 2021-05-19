@@ -82,9 +82,9 @@
 `sudo mkfs.ext4 /dev/vgstockage/lvstockage`
 
 ###### montage persitant avec fstab
-`sudo mkdir -p /mnt/TP1`  
-`sudo nano /etc/fstab`  
-`echo "/dev/vgstockage/lvstockage     /mnt/TP1     ext4     errors=remount-ro     0     1    " >> /etc/fstab`  
+1. `sudo mkdir -p /mnt/TP1`  
+1. `sudo nano /etc/fstab`  
+1. `echo "/dev/vgstockage/lvstockage     /mnt/TP1     ext4     errors=remount-ro     0     1    " >> /etc/fstab`  
 
 
 
@@ -112,19 +112,19 @@
 `sudo vgextend /dev/vgstockage/lvstockage /dev/$sdd`
 
 
-- augmentez la capacité du LV* : de 4 Go supplémentaires.
+- augmentez la capacité du LV* : de 4 Go supplémentaires.  
 `sudo lvextend -L+4G  /dev/vgstockage/lvstockage`
 
 
 - Comparez la taille du LV* à celle de la partition*    
 
-`sudo cat /proc/partitions`  
-`sudo df -h`  
-
-`sudo lvs`  
-
-`sudo vgdisplay vgstockage`  
-<!-- `sudo vgdisplay` -->
+    `sudo cat /proc/partitions`  
+    `sudo df -h`  
+    
+    `sudo lvs`  
+    
+    `sudo vgdisplay vgstockage`  
+    <!-- `sudo vgdisplay` -->
 
 
 ###### *Pour utiliser la totalité de l’espace du LV* :  
