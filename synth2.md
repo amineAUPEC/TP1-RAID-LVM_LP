@@ -78,7 +78,7 @@
    ` sudo lvs`
 ###### formater en ext4  
 <!-- sudo mkfs.ext4 /dev/vgstockage/ -->
->> `sudo mkfs.ext4 /dev/vgstockage/lvstockage`
+>    `sudo mkfs.ext4 /dev/vgstockage/lvstockage`
 
 
 ###### montage persitant avec fstab
