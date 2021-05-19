@@ -53,3 +53,30 @@ AMI :
         - Authentification avec la clé en paramètres
             - `ssh -i $path/demo_ssh.ssh ubuntu@$IP_pub_aws`
 
+
+- SYN ACK Firewall paquet test d'installation de paquets
+
+
+- Tenant (locataire)
+    - Schemas : 
+        - :::image type="complex" source="images/Capture_decran 2021-05-19 121310.png" alt-text="schema1_TP":::
+        :::image-end:::
+
+- VPC Virtual Private Cloud : Peuvent êtres étanches entre eux : via l'IPSec
+    - CHANEL ne veut pas que ces VM soit partagés à DIOR car il y a de la confidentialité
+        - routage intervlan
+        
+    - TP avec que des VPC étanches pas d'inter-connexion entre les autres
+
+- 
+
+- 
+
+- 
+
+- 
+
+
+
+> [!NOTE]
+> Copyright Brice-Augustin
