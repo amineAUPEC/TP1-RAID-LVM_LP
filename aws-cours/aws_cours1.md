@@ -47,5 +47,9 @@ AMI :
 - Avec SSH :
     - clé publique - clé privée *au lieu du mdp*
         - La créé sur Amazon via puttygen et via créer une nouvelle paire de clé - télécharger une paire de clé (la clé privée)
-
+        - Définir les permissions
+            <!-- - `chmod 600 $path/demo_ssh.ssh` -->
+            - `chmod g-r $path/demo_ssh.ssh` `&&` `chmod o-r $path/demo_ssh.ssh`
+        - Authentification avec la clé en paramètres
+            - `ssh -i $path/demo_ssh.ssh ubuntu@$IP_pub_aws`
 
