@@ -105,16 +105,16 @@
 
 
 
-- Initialisez ce volume en tant que PV*
+- Initialisez ce volume en tant que PV*  
    `sudo pvcreate /dev/$sdd`
 
-- puis ajoutez* ce dernier dans le VG vgstockage. 
+- puis ajoutez* ce dernier dans le VG **vgstockage**.   
 `sudo vgextend /dev/vgstockage/lvstockage /dev/$sdd`
 
 
 - augmentez la capacité du LV* : de 4 Go supplémentaires.
 
-`sudo lvextend -L+4G  /dev/vgstockage/lvstockage  `
+`sudo lvextend -L+4G  /dev/vgstockage/lvstockage`
 
 
 - Comparez la taille du LV* à celle de la partition*    
