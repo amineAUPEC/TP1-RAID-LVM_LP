@@ -6,13 +6,14 @@
 
 
 
-    sudo pvcreate /dev/sdd
+   `sudo pvcreate /dev/sdd`
 
 <!-- sudo vgcreate vgstockage /etc/sdc /etc/sdd -->
 <!-- sudo vgcreate vgstockage sdc sdd -->
 <!-- sudo pvlist -->
 <!-- sudo pvl -->
 
+> creating vgstockage
     sudo vgcreate vgstockage /dev/sdc /dev/sdd
 
     sudo lvcreate -L 1G -n lvstockage vgstockage
