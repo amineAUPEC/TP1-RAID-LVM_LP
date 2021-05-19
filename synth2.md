@@ -51,3 +51,37 @@
 
 
 ## eleves :
+
+- installer LVM  
+`sudo apt-get update -y && sudo apt-get install -y lvm2`
+
+
+
+- init pvcreate sdb  
+`sudo pvcreate /dev/sdb`
+
+
+- init pvcreate sdc  
+`sudo pvcreate /dev/sdc`
+
+
+- creating vgstockage  
+`sudo vgcreate vgstockage /dev/sdc /dev/sdd`
+
+
+
+- lvstockage avec 75%  
+
+`sudo lvcreate -l 75%VG -n lvstockage vgstockage`
+
+
+- lister les stockages    
+   ` sudo lvs`
+###### formater en ext4  
+<!-- sudo mkfs.ext4 /dev/vgstockage/ -->
+`sudo mkfs.ext4 /dev/vgstockage/lvstockage`
+
+###### montage persitant avec fstab
+`sudo mkdir -p /mnt/TP1`
+`sudo nano /etc/fstab`
+`echo "/dev/vgstockage/lvstockage     /mnt/TP1     ext4     errors=remount-ro     0     1    " >> /etc/fstab`
