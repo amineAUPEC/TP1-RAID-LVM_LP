@@ -36,7 +36,6 @@ AMI :
 
 
 
-
 - Type d'instances :
     - t2.micro gratuit et 10 cts/H
     - t2.2xlarge extralarge
@@ -58,6 +57,7 @@ AMI :
 - Tenant (locataire)
     - Schemas : 
         - ![schema_TP1](./images/Capture_decran_2021-05-19_121310.png)
+        - 
         <!-- - :::image type="complex" source="images/Capture_decran 2021-05-19121310.png" alt-text="schema1_TP":::
         :::image-end::: -->
 
@@ -69,6 +69,11 @@ AMI :
 
 - isolation : maquette :
     ![schema2](./images/Capture_decran_2021-05-19_122403.png)
+
+
+
+
+
     
     - routeurs va effectuer du NAT statique : atrribuer une @IP statique privée avec une autre IP publique
 
@@ -76,7 +81,10 @@ AMI :
 
 <!-- -  -->
 
+Proxmox en vu publique
 
 
 > [!NOTE]
 > Copyright Brice-Augustin, Amine AA
+
+
