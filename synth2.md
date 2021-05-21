@@ -199,6 +199,7 @@ major minor  #blocks  name
 
 --- après montage sata :
 
+```bash
 etudiant@debian-stretch:~$ cat /proc/partitions
 major minor  #blocks  name
 
@@ -212,3 +213,4 @@ major minor  #blocks  name
    8        0    2097152 sda
    8       80    2097152 sdf
  254        0    3137536 dm-0
+```
