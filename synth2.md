@@ -106,13 +106,16 @@
 - initier en RAID 5 :  
 `cat /proc/partitions`  
 `sudo apt-get update -y  && sudo apt-get install -y mdadm`  
-`sudo mdadm --create --verbose /dev/md3 --level=5 --raid-devices=3 /dev/sde /dev/sda /dev/sdf --spare-devices=0`  
+`sudo mdadm --create --verbose /dev/md127 --level=5 --raid-devices=3 /dev/sde /dev/sda /dev/sdf --spare-devices=0`  
 
-- Initialisez ce volume en tant que PV*  
-   `sudo pvcreate /dev/$sdd`
+- voir proc/mdstat  
+`sudo cat /proc/mdstat`  
+
+- Initialisez ce volume en tant que PV*    
+   `sudo pvcreate /dev/md127`  
 
 - puis ajoutez* ce dernier dans le VG **vgstockage**.   
-`sudo vgextend /dev/vgstockage/lvstockage /dev/$sdd`
+`sudo vgextend /dev/vgstockage/lvstockage /dev/md127`  
 
 
 - augmentez la capacité du LV* : de 4 Go supplémentaires.  
