@@ -115,11 +115,11 @@
    `sudo pvcreate /dev/md127`  
 
 - puis ajoutez* ce dernier dans le VG **vgstockage**.   
-`sudo vgextend /dev/vgstockage/lvstockage /dev/md127`  
+`sudo vgextend vgstockage /dev/md127`  
 
 
 - augmentez la capacité du LV* : de 4 Go supplémentaires.  
-`sudo lvextend -L+4G  /dev/vgstockage/lvstockage`
+`sudo lvextend -L+4G  /dev/vgstockage/lvstockage`  
 
 
 - Comparez la taille du LV* à celle de la partition*    
@@ -135,7 +135,7 @@
 
 ###### *Pour utiliser la totalité de l’espace du LV* :  
 - étendre son système de fichiers*.  
-
+`sudo resize2fs /dev/vgstockage/lvstockage`  
 > [!NOTE]
 > Après cette opération, vérifiez que la totalité de l’espace de stockage est bien utilisée par le système de fichier.   
 - Affichez les propriétés du VG* :   
