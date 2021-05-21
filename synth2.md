@@ -41,8 +41,8 @@
 
 > [!WARNING]
 > pas de places car impossible de créer virtuellement si on ne les mutualise pas physiquement  
-> Virtualbox il donne l'illusion, dou le fait que cest possible mais des quon ecris les données dès quil est plein.  
-> il va lever l'exception avec un msg derreur, ou message système "Freenas: permission non accordée"   
+> Virtualbox il donne l'illusion, d'ou le fait que cest possible mais des quon ecris les données dès quil est plein.  
+> Il va lever l'exception avec un msg derreur, ou message système "Freenas: permission non accordée"   
 
 ####                # réduit à 1GB
 >>    `sudo lvreduce -L 1G  /dev/vgstockage/lvstockage <<< "y"`
@@ -137,3 +137,78 @@
 - Affichez les propriétés du VG* :   
 > *pour vérifier qu'il lui reste encore de l'espace non alloué.*  
 `sudo vgdisplay vgstockage`
+
+
+
+Last login: Fri May 21 15:24:19 2021  
+```bash
+etudiant@debian-stretch:~$ history  
+    1  sudo reboot  
+    2  sudo shutdown now  
+    3  ip a  
+    4  ls  
+    5  cat /proc/partitions  
+    6  sudo shutdown now  
+    7  cat /proc/partitions  
+    8  sudo pvcreate /dev/sdb  
+    9  sudo pvcreate /dev/sdb/  
+   10  sudo apt-get update
+   11  sudo lvs
+   12  su
+   13  sudo nano /etc/fstab 
+   14  sudo mkdir -p /mnt/TP1
+   15  sudo nano /etc/fstab
+   16  mount
+   17  df -h
+   18  sudo fdisk -l
+   19  ls /mnt/TP1
+   20  sudo nano /etc/fstab
+   21  sudo reboot
+   22  ip a ###
+   23  cat /proc/partitions
+   24  sudo vgextend /dev/group1 /dev/sda6
+   25  att
+   26  PK ?
+   27  att je viens disc
+   28  sudo vgextend /dev/group1 /dev/sdd
+   29  ip a
+   30  sudo apt-get update
+   31  sudo apt-get install ssh
+   32  sudo reboot
+   33  history
+```
+
+
+
+-- avant montage disque sata
+
+
+```bash
+etudiant@debian-stretch:~$ sudo cat /proc/partitions
+major minor  #blocks  name
+
+   8        0    8388608 sda
+   8        1    7863296 sda1
+   8        2          1 sda2
+   8        5     522240 sda5
+   8       16    2097152 sdb
+   8       32    2097152 sdc
+ 254        0    3137536 dm-0
+
+```
+
+--- après montage sata :
+
+etudiant@debian-stretch:~$ cat /proc/partitions
+major minor  #blocks  name
+
+   8       32    2097152 sdc
+   8       48    8388608 sdd
+   8       49    7863296 sdd1
+   8       50          1 sdd2
+   8       53     522240 sdd5
+   8       64    2097152 sde
+   8       16    2097152 sdb
+   8        0    2097152 sda
+   8       80    2097152 sdf
+ 254        0    3137536 dm-0
