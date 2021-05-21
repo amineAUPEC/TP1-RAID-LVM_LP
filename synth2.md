@@ -105,7 +105,7 @@
 
 - initier en RAID 5 :  
 `cat /proc/partitions`  
-`sudo mdmadm --create --verbose /dev/md3 --level=5 --raid-devices=3 /dev/sdd /dev/sde /dev/sdf --spare-devices=0`  
+`sudo mdmadm --create --verbose /dev/md3 --level=5 --raid-devices=3 /dev/sde /dev/sdd /dev/sdf --spare-devices=0`  
 
 - Initialisez ce volume en tant que PV*  
    `sudo pvcreate /dev/$sdd`
