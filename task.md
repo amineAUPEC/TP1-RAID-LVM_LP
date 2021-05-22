@@ -1,12 +1,12 @@
-screen de kavi
+- screen de kavi
 
 
 
--- inverser formate etc 
+<!-- -- inverser formate etc  -->
 
--effacer les mauvais screens
+<!-- - effacer les mauvais screens -->
 - screen fstab
-- effecaer les synthses
-- preciser disques ide et sata
-- et partition etendue
+<!-- - effecaer les synthses -->
+<!-- - preciser disques ide et sata -->
+<!-- - et partition etendue -->
 
